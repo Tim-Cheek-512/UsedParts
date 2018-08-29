@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  color: #b5daff;
+  line-height: 1.6;
+  background-color: #202020;
+}
+
+#showcase {
+  background-image: url(./img/partsPile.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  z-index: 9990;
+}
+
+#logo img {
+  position: absolute;
+  left: 42.5%;
+  bottom: 75%;
+  width: 250px;
+  height: auto;
+  z-index: 9999;
+}
+
+#showcase h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+#showcase p {
+  font-size: 22px;
+}
+
+#showcase .button {
+  font-size: 14px;
+  text-decoration: none;
+  color: #b5daff;
+  border: #b5daff 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#showcase .button2 {
+  font-size: 18px;
+  text-decoration: none;
+  color: #b5daff;
+  border: #b5daff 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.lowerContainer #section-b {
+  background-image: url(./img/fullRoom.jpg);
+  background-repeat: no-repeat;
+  width: 80%;
+  margin: 0 auto;
+  height: 30em;
+  align: center;
+}
+
+#showcase .button:hover {
+  color: #fff;
+}
+
+#showcase .button2:hover {
+  color: #fff;
+}
+
+#section-a {
+  padding: 20px;
+  color: #b5daff;
+  text-align: center;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+/* #section-b {
+  padding: 20px;
+  text-align: center;
+  overflow-x: hidden;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.words{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+/* .Row{
+  width: 80%;
+  left: 10%;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.left{
+  justify-content: flex-start;
+  width: 30%;
+}
+.middle{
+  justify-content: center;
+  width: 30%;
+}
+.right{
+  justify-content: flex-end;
+  width:30%;
+} */
+
+#leftImg{
+  width: 350px;
+  height: auto;
+}
+#middleImg{
+  width: 350px;
+  height: auto;
+}
+#rightImg{
+  width: 350px;
+  height: auto;
+}
+.containImg {
+  max-width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.containImg .left {
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  margin-left: 10%;
+}
+
+.containImg .center {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.containImg .right {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-right: 10%;
+  padding: 10px;
+}
+
+
+/* Click to call button desktop redirect */
+#showcase .button3:hover {
+  color: #fff;
+}
+#showcase .button3 {
+  font-size: 18px;
+  text-decoration: none;
+  color: #b5daff;
+  border: #b5daff 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Media Queries */
+
+
+/* Special Query for click to call button */
+@media screen and (min-width:1000px) and (max-width: 2565px){
+  #showcase .button3{
+    display: inline !important;
+  }
+  #showcase .button2{
+    display: none;
+  }
+}
+@media screen and (min-width:150px) and (max-width: 990px){
+  #showcase .button3{
+    display: none;
+  }
+  #showcase .button2{
+    display: inline !important;
+  }
+}
+
+/* Mobile - Samsung */
+
+@media screen and (min-width:350px) and (max-width: 365px) {
+  html {
+    overflow-x: hidden;
+  }
+  #logo img {
+    position: absolute;
+    left: 18%;
+    bottom: 70%;
+    width: 250px;
+    height: auto;
+    z-index: 9999;
+  }
+  #section-b{
+    width: 100%;
+    padding: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    background-size: contain;
+    box-sizing: border-box;
+    margin-bottom: -300px;
+  }
+  #showcase h1 {
+    padding-bottom: 10%;
+    padding-top: 3%;
+  }
+  #showcase .button2 {
+    width: 80%;
+  }
+  #showcase .button {
+    width: 75%;
+  }
+  .containImg{
+    display: inline-grid;
+  }
+  .containImg .left{
+    box-sizing: border-box;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containImg .center{
+    box-sizing: border-box;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containImg .right{
+    box-sizing: border-box;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .words{
+    margin-top: -300px;
+  }
+}
+
+/* tablet/mobile hybrid resolutions */
+
+@media screen and (min-width:420px) and (max-width: 750px) {
+  #logo img {
+    max-width: 50%;
+    left: 25%;
+    right: 25%;
+  }
+  .containImg{
+    display: inline-grid;
+  }
+  .containImg .left{
+    box-sizing: border-box;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containImg .center{
+    box-sizing: border-box;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containImg .right{
+    box-sizing: border-box;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #section-b{
+    width: 100%;
+    padding: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    background-size: contain;
+    box-sizing: border-box;
+    margin-bottom: -300px;
+  }
+}
+
+/* Amazon fire tablets */
+
+@media screen and (min-width:790px) and (max-width: 815px) {
+  #logo img {
+    width: 50%;
+    left: 25%;
+  }
+  .words{
+    font-size: 1.6em;
+  }
+  #showcase h1 {
+    font-size: 4em;
+    top: -10%;
+    margin-bottom: 5%;
+  }
+  #showcase p {
+    font-size: 2em;
+  }
+  #showcase .button {
+    width: 60%;
+    font-size: 24px;
+  }
+  #showcase .button2 {
+    width: 70%;
+    font-size: 30px;
+  }
+  #section-a {
+    font-size: 30px;
+  }
+  #leftImg {
+    width: 95%;
+  }
+  #middleImg{
+    width: 95%;
+  }
+  #rightImg{
+    width: 95%;
+  }
+  #section-b {
+    margin: 0 auto;
+    background-position: center;
+  }
+  .containImg{
+    display: inline-grid;
+  }
+  .containImg .left{
+    box-sizing: border-box;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containImg .center{
+    box-sizing: border-box;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containImg .right{
+    box-sizing: border-box;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #section-b{
+    width: 100%;
+    padding: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    background-size: contain;
+    box-sizing: border-box;
+    margin-bottom: -300px;
+  }
+}
+
+/* Mobile - Iphones 6,7+ */
+
+@media screen and (min-width:374px) and (max-width: 416px) {
+  #logo img {
+    left: 22%;
+    top: -7%;
+  }
+  #showcase .button {
+    width: 75%;
+  }
+  #showcase .button2 {
+    width: 80%;
+  }
+  .containImg{
+    display: inline-grid;
+  }
+  .containImg .left{
+    box-sizing: border-box;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containImg .center{
+    box-sizing: border-box;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containImg .right{
+    box-sizing: border-box;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #section-b{
+    width: 100%;
+    height: 200px;
+    padding: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    background-size: contain;
+    box-sizing: border-box;
+  }
+  .words{
+    margin-top: -200px;
+  }
+}
+
+/* Mobile iphone 5s and older */
+
+@media screen and (min-width:318px) and (max-width: 324px) {
+  #logo img {
+    left: 13%;
+    top: -12%;
+  }
+  #showcase .button {
+    width: 75%;
+  }
+  #showcase .button2 {
+    width: 80%;
+  }
+  #showcase h1 {
+    font-size: 2em;
+  }
+  #showcase p {
+    font-size: .8em;
+  }
+  .containImg{
+    display: inline-grid;
+  }
+  #leftImg{
+    width: 95%;
+  }
+  #middleImg{
+    width: 95%;
+  }
+  #rightImg{
+    width: 95%;
+  }
+  #section-b{
+    width: 100%;
+    padding: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    background-size: contain;
+    box-sizing: border-box;
+    margin-bottom: -300px;
+  }
+  .words{
+    margin-top: -320px;
+  }
+}
+
+/* Ipad */
+
+@media screen and (min-width: 760px) and (max-width: 780px) {
+  #logo img {
+    position: absolute;
+    left: 28%;
+    bottom: 70%;
+    width: 350px;
+    height: auto;
+    z-index: 9999;
+  }
+  #showcase .button2 {
+    font-size: 22px;
+    width: 35%;
+  }
+  #showcase .button {
+    width: 30%;
+    font-size: 18px;
+  }
+  #showcase h1 {
+    font-size: 3em;
+  }
+  .lowerContainer {
+    font-size: 1.4em;
+  }
+  #section-b{
+    width: 100%;
+    padding: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    background-size: contain;
+    box-sizing: border-box;
+    margin-bottom: -300px;
+  }
+  .containImg{
+    display: table-row;
+  }
+  .words{
+    margin-top: -230px;
+  }
+}
+
+/* Ipad Pro */
+
+@media screen and (min-width:1000px) and (max-width: 1100px) {
+  html {
+    overflow-x: hidden;
+  }
+  #logo img {
+    position: absolute;
+    left: 28.5%;
+    bottom: 70%;
+    width: 450px;
+  }
+  #showcase h1 {
+    font-size: 4em;
+  }
+  #showcase p {
+    font-size: 1.5em;
+  }
+  #section-a, .words{
+    font-size: 2em;
+  }
+  #leftImg{
+    display: inline-block;
+    width: 90%;
+    box-sizing: border-box;
+    margin-right: 10%;
+  }
+  #middleImg{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #rightImg{
+    display: inline-block;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #showcase .button{
+    width: 60%;
+    font-size: 1.5em;
+  }
+  #showcase .button3{
+    width: 80%;
+    font-size: 1.6em;
+    padding-right: 80px;
+  }
+
+}
